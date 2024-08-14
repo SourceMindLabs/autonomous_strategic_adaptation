@@ -3,6 +3,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import numpy as np
 
 class AdvancedCritic(nn.Module):
     def __init__(self, state_dim, action_dim, hidden_dims=[400, 300], activation=F.relu):
